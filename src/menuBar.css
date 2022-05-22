@@ -1,0 +1,17 @@
+.menuItem {
+    color: blueviolet;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+}
+
+.menuItem:hover {
+    color: rgb(77, 24, 126);
+    background-color: rgb(216, 198, 233);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.menuBar {
+    padding: 10px;
+}

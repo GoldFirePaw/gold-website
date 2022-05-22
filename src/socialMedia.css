@@ -1,0 +1,27 @@
+div.socialMedia {
+    display: flex;
+    justify-content: center;
+}
+
+h3.socialMedia {
+    color: rgb(180, 140, 218);
+    font-family: "Roboto";
+}
+
+.socialMediaGrid {
+    width: 100%;
+}
+
+.socialMediaCol {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.socialMediaLink {
+    color: rgb(180, 140, 218);
+}
+
+.socialMediaLink:hover {
+    color: rgb(103, 76, 128);
+}
