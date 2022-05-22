@@ -19,6 +19,20 @@ function App() {
       </header>
       <ContactButton />
       <SocialMedia />
+      <p>
+        Banner by {""}
+        <a
+          className="bottomLink"
+          href="https://www.etsy.com/fr/shop/PastelSaga"
+        >
+          PastelSaga
+        </a>
+        <br />
+        Created by {""}
+        <a className="bottomLink" href="https://github.com/GoldFirePaw">
+          GoldFirePaw
+        </a>
+      </p>
     </div>
   );
 }

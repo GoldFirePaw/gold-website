@@ -20,6 +20,12 @@ img {
     width: 100%;
 }
 
+.bottomLink {
+    color: rgb(183, 131, 232);
+    text-decoration: underline;
+    font-weight: 900;
+}
+
 .headerName {
     position: absolute;
     top: 50%;
