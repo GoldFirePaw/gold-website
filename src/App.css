@@ -39,3 +39,35 @@ img {
     font-size: 20px;
     font-weight: 800;
 }
+
+@media all and (max-width: 980px) {
+    .headerText {
+        top: 70%;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .headerName {
+        font-size: 55px;
+    }
+    .headerText {
+        top: 75%;
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .headerText {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .headerName {
+        font-size: 35px;
+    }
+    .headerText {
+        top: 75%;
+        font-size: 12px;
+    }
+}
