@@ -3,9 +3,9 @@ import "./index.css";
 import "foundation-sites/dist/css/foundation.min.css";
 import { Menu, MenuItem, Link, Button, Colors } from "react-foundation";
 import MenuBar from "./menuBar";
-import image from "./images/Twitch-banner.png";
 import ContactButton from "./contactButton";
 import SocialMedia from "./socialMedia";
+import Banner from "./BannerImage";
 
 function App() {
   let helloWorld: string = "Hello World";
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <MenuBar />
       <header className="App-header">
-        <img src={image} alt="Banner" />
+        <Banner />
         <h1 className="headerName">GoldFirePaw</h1>
         <p className="headerText">
           Hello, I am Camille. I am a front-end developper.
