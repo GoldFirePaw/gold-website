@@ -7,22 +7,22 @@ export default function MenuBar() {
     <div className="menuBar menu-basics-example">
       <Menu>
         <MenuItem>
-          <a className="menuItem">🏠 Home</a>
+          <a href="https://www.instagram.com/camillelitdeslivres/" className="menuItem">🏠 Home</a>
         </MenuItem>
         <MenuItem>
-          <a className="menuItem">📄 About</a>
+          <a href="https://www.instagram.com/camillelitdeslivres/" className="menuItem">📄 About</a>
         </MenuItem>
         <MenuItem>
-          <a className="menuItem">🎨 Drawings</a>
+          <a href="https://www.instagram.com/camillelitdeslivres/" className="menuItem">🎨 Drawings</a>
         </MenuItem>
         <MenuItem>
-          <a className="menuItem">💻 Projects</a>
+          <a href="https://www.instagram.com/camillelitdeslivres/" className="menuItem">💻 Projects</a>
         </MenuItem>
         <MenuItem>
-          <a className="menuItem">🎮 Stream</a>
+          <a href="https://www.instagram.com/camillelitdeslivres/" className="menuItem">🎮 Stream</a>
         </MenuItem>
         <MenuItem>
-          <a className="menuItem">📮 Contact</a>
+          <a href="https://www.instagram.com/camillelitdeslivres/" className="menuItem">📮 Contact</a>
         </MenuItem>
       </Menu>
     </div>);
