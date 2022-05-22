@@ -1,14 +1,12 @@
 import "./App.css";
 import "./index.css";
 import "foundation-sites/dist/css/foundation.min.css";
-import { Menu, MenuItem, Link, Button, Colors } from "react-foundation";
 import MenuBar from "./menuBar";
 import ContactButton from "./contactButton";
 import SocialMedia from "./socialMedia";
 import Banner from "./BannerImage";
 
 function App() {
-  let helloWorld: string = "Hello World";
   return (
     <div className="App">
       <MenuBar />
