@@ -3,6 +3,7 @@
     border: 1px solid rgb(255, 255, 255);
     border-radius: 30px;
     transition: ease-in-out 0.3s;
+    padding: 10px;
 }
 
 .menuItem:hover {
