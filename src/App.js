@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <MenuBar
-        changeProjectsPage={setProjectsPage}
+        setProjectsPage={setProjectsPage}
         projectsPage={projectsPage}
         setContactButton={setContactButton}
         contactButton={contactButton}

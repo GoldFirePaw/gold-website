@@ -12,9 +12,9 @@ export default function MenuBar(props) {
 
   function handleClickHome() {
     props.setContactButton(false)
-    props.changeProjectsPage(false)
+    props.setProjectsPage(false)
     props.setAboutPage(false)
-    props.changeDrawingsPage(false)
+    props.setDrawingsPage(false)
     props.setStreamPage(false)
   }
 
@@ -22,7 +22,7 @@ export default function MenuBar(props) {
     if (aboutPage === false) {
       props.setAboutPage(true)
       props.setContactButton(false)
-      props.changeProjectsPage(false)
+      props.setProjectsPage(false)
       props.setDrawingsPage(false)
       props.setStreamPage(false)
     }
@@ -36,7 +36,7 @@ export default function MenuBar(props) {
       props.setDrawingsPage(true)
       props.setContactButton(false)
       props.setAboutPage(false)
-      props.changeProjectsPage(false)
+      props.setProjectsPage(false)
       props.setStreamPage(false)
     }
     else if (drawingsPage === true) {
@@ -46,21 +46,21 @@ export default function MenuBar(props) {
 
   function handleClickProjects() {
     if (projectsPage === false) {
-      props.changeProjectsPage(true)
+      props.setProjectsPage(true)
       props.setContactButton(false)
       props.setAboutPage(false)
       props.setDrawingsPage(false)
       props.setStreamPage(false)
     }
     else if (projectsPage === true) {
-      props.changeProjectsPage(false)
+      props.setProjectsPage(false)
     }
   }
 
   function handleClickStreams() {
     if (streamPage === false) {
       props.setStreamPage(true)
-      props.changeProjectsPage(false)
+      props.setProjectsPage(false)
       props.setContactButton(false)
       props.setAboutPage(false)
       props.setDrawingsPage(false)
@@ -73,10 +73,10 @@ export default function MenuBar(props) {
   function handleClickContact() {
     if (contactButton === false) {
       props.setContactButton(true)
-      props.changeProjectsPage(false)
+      props.setProjectsPage(false)
       props.setAboutPage(false)
       props.setStreamPage(false)
-      props.changeDrawingsPage(false)
+      props.setDrawingsPage(false)
     }
     else if (contactButton === true) {
       props.setContactButton(false)
