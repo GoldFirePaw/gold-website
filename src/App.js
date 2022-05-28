@@ -7,10 +7,12 @@ import SocialMedia from "./socialMedia";
 import Banner from "./BannerImage";
 import { useState } from "react";
 import ProjectsPage from "./projectsPage";
+import AboutPage from "./aboutPage";
 
 function App() {
   const [contactButton, setContactButton] = useState(false);
   const [projectsPage, setProjectsPage] = useState(false);
+  const [aboutPage, setAboutPage] = useState(false);
 
   return (
     <div className="App">
@@ -19,6 +21,8 @@ function App() {
         projectsPage={projectsPage}
         setContactButton={setContactButton}
         contactButton={contactButton}
+        setAboutPage={setAboutPage}
+        aboutPage={aboutPage}
       />
       <header className="App-header">
         <Banner />
@@ -29,6 +33,8 @@ function App() {
       </header>
       {projectsPage ? <ProjectsPage /> : null}
       {contactButton ? <ContactButton /> : null}
+      {aboutPage ? <AboutPage /> : null}
+
       <SocialMedia />
       <p>
         Banner by {""}
