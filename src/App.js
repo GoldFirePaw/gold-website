@@ -5,11 +5,21 @@ import MenuBar from "./menuBar";
 import ContactButton from "./contactButton";
 import SocialMedia from "./socialMedia";
 import Banner from "./BannerImage";
+import { useState } from "react";
+import ProjectsPage from "./projectsPage";
 
 function App() {
+  const [contactButton, setContactButton] = useState(false);
+  const [projectsPage, setProjectsPage] = useState(false);
+
   return (
     <div className="App">
-      <MenuBar />
+      <MenuBar
+        changeProjectsPage={setProjectsPage}
+        projectsPage={projectsPage}
+        setContactButton={setContactButton}
+        contactButton={contactButton}
+      />
       <header className="App-header">
         <Banner />
         <h1 className="headerName">GoldFirePaw</h1>
@@ -17,7 +27,8 @@ function App() {
           Hello, I am Camille. I am a front-end developper.
         </p>
       </header>
-      <ContactButton />
+      {projectsPage ? <ProjectsPage /> : null}
+      {contactButton ? <ContactButton /> : null}
       <SocialMedia />
       <p>
         Banner by {""}

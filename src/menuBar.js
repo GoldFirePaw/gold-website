@@ -1,14 +1,33 @@
 import "foundation-sites/dist/css/foundation.min.css";
 import { Menu, MenuItem } from "react-foundation";
 import "./menuBar.css";
-import ContactButton from "./contactButton";
 
+export default function MenuBar(props) {
+  let projectsPage = props.projectsPage
+  let contactButton = props.contactButton
 
-export default function MenuBar() {
+  function handleClickContact(setContactButton) {
+    if (contactButton === false) {
+      props.setContactButton(true)
+      props.changeProjectsPage(false)
 
-  function handleClick(ContactButton) {
-    return (
-      <ContactButton />);
+    }
+    else if (contactButton === true) {
+      props.setContactButton(false)
+    }
+  }
+
+  function handleClickProjects(changeProjectsPage) {
+
+    if (projectsPage === false) {
+      props.changeProjectsPage(true)
+      props.setContactButton(false)
+
+    }
+    else if (projectsPage === true) {
+      props.changeProjectsPage(false)
+    }
+
   }
 
   return (
@@ -24,13 +43,13 @@ export default function MenuBar() {
           <button type="button" className="menuItem">🎨 Drawings</button>
         </MenuItem>
         <MenuItem>
-          <button type="button" className="menuItem">💻 Projects</button>
+          <button type="button" onClick={handleClickProjects} className="menuItem">💻 Projects</button>
         </MenuItem>
         <MenuItem>
           <button type="button" className="menuItem">🎮 Stream</button>
         </MenuItem>
         <MenuItem>
-          <button type="button" onClick={handleClick} className="menuItem">📮 Contact</button>
+          <button type="button" onClick={handleClickContact} className="menuItem">📮 Contact</button>
         </MenuItem>
       </Menu>
     </div>);
