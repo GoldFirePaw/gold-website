@@ -40,7 +40,7 @@ export default function MenuBar(props) {
       props.setStreamPage(false)
     }
     else if (drawingsPage === true) {
-      props.changeDrawingsPage(false)
+      props.setDrawingsPage(false)
     }
   }
 
@@ -49,7 +49,7 @@ export default function MenuBar(props) {
       props.changeProjectsPage(true)
       props.setContactButton(false)
       props.setAboutPage(false)
-      props.changeDrawingsPage(false)
+      props.setDrawingsPage(false)
       props.setStreamPage(false)
     }
     else if (projectsPage === true) {
@@ -63,7 +63,7 @@ export default function MenuBar(props) {
       props.changeProjectsPage(false)
       props.setContactButton(false)
       props.setAboutPage(false)
-      props.changeDrawingsPage(false)
+      props.setDrawingsPage(false)
     }
     else if (streamPage === true) {
       props.setStreamPage(false)
