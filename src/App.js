@@ -8,11 +8,15 @@ import Banner from "./BannerImage";
 import { useState } from "react";
 import ProjectsPage from "./projectsPage";
 import AboutPage from "./aboutPage";
+import DrawingsPage from "./drawingsPage";
+import StreamPage from "./streamPage";
 
 function App() {
   const [contactButton, setContactButton] = useState(false);
   const [projectsPage, setProjectsPage] = useState(false);
   const [aboutPage, setAboutPage] = useState(false);
+  const [drawingsPage, setDrawingsPage] = useState(false);
+  const [streamPage, setStreamPage] = useState(false);
 
   return (
     <div className="App">
@@ -23,6 +27,10 @@ function App() {
         contactButton={contactButton}
         setAboutPage={setAboutPage}
         aboutPage={aboutPage}
+        setDrawingsPage={setDrawingsPage}
+        drawingsPage={drawingsPage}
+        setStreamPage={setStreamPage}
+        streamPage={streamPage}
       />
       <header className="App-header">
         <Banner />
@@ -34,6 +42,8 @@ function App() {
       {projectsPage ? <ProjectsPage /> : null}
       {contactButton ? <ContactButton /> : null}
       {aboutPage ? <AboutPage /> : null}
+      {drawingsPage ? <DrawingsPage /> : null}
+      {streamPage ? <StreamPage /> : null}
 
       <SocialMedia />
       <p>
