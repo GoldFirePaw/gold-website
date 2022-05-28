@@ -23,7 +23,7 @@ export default function MenuBar(props) {
       props.setAboutPage(true)
       props.setContactButton(false)
       props.changeProjectsPage(false)
-      props.changeDrawingsPage(false)
+      props.setDrawingsPage(false)
       props.setStreamPage(false)
     }
     else if (aboutPage === true) {
