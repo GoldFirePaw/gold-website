@@ -10,16 +10,12 @@ export default function DrawingsPage() {
     const [posts, setPosts] = useState();
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            axios.get(apiUrl).then((response) => {
-                if (response) {
-                    setPosts(response.data.data);
-                    console.log("coucou")
-                }
-            });
-        }, 39080000)
-        return () => clearInterval(interval);
-
+        axios.get(apiUrl).then((response) => {
+            if (response) {
+                setPosts(response.data.data);
+                console.log(posts[0].permalink)
+            }
+        });
     }, []);
 
     return (<div>
@@ -30,7 +26,7 @@ export default function DrawingsPage() {
                 })}
             </Row>
         </Container>
-        <h4 className="drawings">While I'm working with the Instagram, I leave you with my Instagram link</h4>
+        {!posts ? <h4 className="drawings">Loading</h4> : null}
         <a target="blank" href="https://www.instagram.com/camillelitdeslivres/" className="instaButton button">Instagram</a>
     </div>)
 }

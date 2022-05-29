@@ -93,7 +93,7 @@ export default function MenuBar(props) {
           <button type="button" onClick={handleClickAbout} className="menuItem">📄 About</button>
         </MenuItem>
         <MenuItem>
-          <button type="button" onClick={handleClickDrawings} className="menuItem">🎨 Drawings</button>
+          <button type="button" onClick={handleClickDrawings} className="menuItem">🎨 Instagram feed</button>
         </MenuItem>
         <MenuItem>
           <button type="button" onClick={handleClickProjects} className="menuItem">💻 Projects</button>
