@@ -10,9 +10,9 @@ export default function SocialMedia() {
 
             <div className="socialMedia grid-basics-example">
                 <Grid className="socialMediaGrid display">
-                    <Cell className="socialMediaCol" small={4}><a target="blank" className="socialMediaLink" href="https://twitter.com/GoldFirePaw"><i class="fa-brands fa-twitter-square"></i></a></Cell>
-                    <Cell className="socialMediaCol" small={4}><a target="blank" className="socialMediaLink" href="https://www.instagram.com/camillelitdeslivres/"><i class="fa-brands fa-instagram-square"></i></a></Cell>
-                    <Cell className="socialMediaCol" small={4}><a target="blank" className="socialMediaLink" href="https://www.twitch.tv/goldfirepaw"><i class="fa-brands fa-twitch"></i></a></Cell>
+                    <Cell className="socialMediaCol" small={4}><a target="blank" className="socialMediaLink" href="https://twitter.com/GoldFirePaw"><i className="fa-brands fa-twitter-square"></i></a></Cell>
+                    <Cell className="socialMediaCol" small={4}><a target="blank" className="socialMediaLink" href="https://www.instagram.com/camillelitdeslivres/"><i className="fa-brands fa-instagram-square"></i></a></Cell>
+                    <Cell className="socialMediaCol" small={4}><a target="blank" className="socialMediaLink" href="https://www.twitch.tv/goldfirepaw"><i className="fa-brands fa-twitch"></i></a></Cell>
                 </Grid>
             </div>
         </main >

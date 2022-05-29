@@ -20,3 +20,13 @@ h4.drawings {
     border-radius: 30px;
     color: rgb(201, 166, 226);
 }
+
+li.drawings {
+    list-style: none;
+}
+
+img.drawings {
+    width: auto;
+    max-width: 300px;
+    margin: 10px;
+}

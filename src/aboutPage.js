@@ -12,15 +12,15 @@ export default function AboutPage() {
                     Actually, I often stream on Twitch when I play, when I code or when I prepare for my class day.</p>
                 <h4 className="about">Techs I love and use </h4>
                 <div className="about">
-                    <i class="about fa-brands fa-html5"></i>
-                    <i class="about fa-brands fa-css3"></i>
-                    <i class="about fa-brands fa-bootstrap"></i>
-                    <i class="about fa-brands fa-js-square"></i>
-                    <i class="about fa-brands fa-react"></i>
+                    <i className="about fa-brands fa-html5"></i>
+                    <i className="about fa-brands fa-css3"></i>
+                    <i className="about fa-brands fa-bootstrap"></i>
+                    <i className="about fa-brands fa-js-square"></i>
+                    <i className="about fa-brands fa-react"></i>
                 </div>
                 <h4 className="about">Techs I want to learn </h4>
                 <div className="about">
-                    <i class="about fa-brands fa-vuejs"></i>
+                    <i className="about fa-brands fa-vuejs"></i>
                 </div>
             </article>
         </main>
