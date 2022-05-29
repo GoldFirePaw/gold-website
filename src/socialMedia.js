@@ -3,7 +3,7 @@ import { Grid, Cell } from "react-foundation";
 
 export default function SocialMedia() {
     return (
-        <div>
+        <main className="socialMedia">
             <div className="socialMedia">
                 <h3 className="socialMedia">Social medias</h3>
             </div>
@@ -15,7 +15,7 @@ export default function SocialMedia() {
                     <Cell className="socialMediaCol" small={4}><a target="blank" className="socialMediaLink" href="https://www.twitch.tv/goldfirepaw"><i class="fa-brands fa-twitch"></i></a></Cell>
                 </Grid>
             </div>
-        </div >
+        </main >
 
     )
 }

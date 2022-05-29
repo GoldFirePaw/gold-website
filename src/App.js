@@ -46,7 +46,7 @@ function App() {
       {streamPage ? <StreamPage /> : null}
 
       <SocialMedia />
-      <p>
+      <footer>
         Banner by {""}
         <a
           className="bottomLink"
@@ -59,7 +59,7 @@ function App() {
         <a className="bottomLink" href="https://github.com/GoldFirePaw">
           GoldFirePaw
         </a>
-      </p>
+      </footer>
     </div>
   );
 }

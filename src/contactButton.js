@@ -3,5 +3,7 @@ import "./contactButton.css"
 
 export default function ContactButton() {
     return (
-        <a href="#" className="contactButton button">Contact</a>)
+        <a href="mailto:camilleflajollet@gmail.com" className="contactButton button">Contact</a>
+    )
+
 }

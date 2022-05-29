@@ -1,0 +1,40 @@
+main.projects {
+    display: flex;
+}
+
+button.projects {
+    display: flex;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    width: 150px;
+    justify-content: center;
+    background-color: rgb(201, 166, 226);
+    border: 1px solid rgb(201, 166, 226);
+    border-radius: 30px;
+}
+
+button.projects:hover {
+    background-color: white;
+    border: 1px solid rgb(201, 166, 226);
+    border-radius: 30px;
+    color: rgb(201, 166, 226);
+}
+
+img.projects {
+    height: 90%;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+article.projects {
+    height: 90%;
+    margin-top: 20px;
+    color: rgb(151, 110, 180);
+    border: 1px solid rgb(233, 212, 254);
+    border-radius: 30px;
+    background-color: rgba(233, 212, 254, 0.431);
+    padding: 15px;
+}

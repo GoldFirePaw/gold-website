@@ -46,6 +46,10 @@ img {
     font-weight: 800;
 }
 
+footer {
+    margin-left: 10px;
+}
+
 @media all and (max-width: 980px) {
     .headerText {
         top: 70%;
