@@ -1,8 +1,8 @@
 .contactButton {
     display: flex;
-    margin: 0 auto;
+    margin: 30px auto;
     margin-bottom: 10px;
-    width: 100px;
+    width: 200px;
     justify-content: center;
     align-content: center;
     background-color: rgb(201, 166, 226);
@@ -15,4 +15,8 @@
     border: 1px solid rgb(201, 166, 226);
     border-radius: 30px;
     color: rgb(201, 166, 226);
+}
+
+div.contact {
+    margin: 50px 0;
 }

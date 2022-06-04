@@ -3,7 +3,11 @@ import "./contactButton.css"
 
 export default function ContactButton() {
     return (
-        <a href="mailto:camilleflajollet@gmail.com" className="contactButton button">Contact</a>
+        <div className="contact">
+            <a href="mailto:camilleflajollet@gmail.com" className="contactButton button">Contact me by mail</a>
+            <a href="https://www.linkedin.com/in/camille-f-b48a79190/" className="contactButton button">Linkedin</a>
+        </div>
+
     )
 
 }

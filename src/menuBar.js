@@ -84,7 +84,7 @@ export default function MenuBar(props) {
   }
 
   return (
-    <div className="menuBar menu-basics-example">
+    <main className="menuBar menu-basics-example">
       <Menu>
         <MenuItem>
           <button type="button" onClick={handleClickHome} className="menuItem">🏠 Home</button>
@@ -105,5 +105,5 @@ export default function MenuBar(props) {
           <button type="button" onClick={handleClickContact} className="menuItem">📮 Contact</button>
         </MenuItem>
       </Menu>
-    </div>);
+    </main>);
 }
