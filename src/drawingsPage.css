@@ -1,3 +1,9 @@
+div.drawings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h4.drawings {
     color: rgb(151, 110, 180);
     text-align: center;
@@ -12,6 +18,8 @@ h4.drawings {
     background-color: rgb(201, 166, 226);
     border: 1px solid rgb(201, 166, 226);
     border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .instaButton:hover {

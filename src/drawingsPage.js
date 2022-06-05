@@ -18,7 +18,9 @@ export default function DrawingsPage() {
         });
     }, []);
 
-    return (<div>
+    return (<div className='drawings'>
+        <a target="blank" href="https://www.instagram.com/camillelitdeslivres/" className="instaButton button">Instagram</a>
+
         <Container>
             <Row>
                 {posts?.map(function (post, index) {
@@ -27,6 +29,5 @@ export default function DrawingsPage() {
             </Row>
         </Container>
         {!posts ? <h4 className="drawings">Loading</h4> : null}
-        <a target="blank" href="https://www.instagram.com/camillelitdeslivres/" className="instaButton button">Instagram</a>
     </div>)
 }
