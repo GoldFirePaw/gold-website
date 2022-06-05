@@ -20,8 +20,9 @@ export default function ProjectsPage() {
                             <h4 className="projects">May 2022 :</h4>
                             <br />
                             In this project I tried many ways to use grids. Next I'll add a switch to change the theme.
-                            <a target="blank" href="https://incandescent-phoenix-b705b8.netlify.app/"> <button className="projects button" type="button">Calc project</button> </a>
                         </article>
+                        <a target="blank" href="https://incandescent-phoenix-b705b8.netlify.app/"> <button className="projects button" type="button">Calc project</button> </a>
+
                     </Col>
                 </Row>
                 <Row>
@@ -30,8 +31,9 @@ export default function ProjectsPage() {
                             <h4 className="projects">March 2022 :</h4>
                             <br />
                             In this project I did with SheCodes I learned how to use a weather API.
-                            <a target="blank" href="https://dainty-dasik-625b16.netlify.app/"><button className="projects button" type="button">Weather project</button></a>
                         </article>
+                        <a target="blank" href="https://dainty-dasik-625b16.netlify.app/"><button className="projects button" type="button">Weather project</button></a>
+
                     </Col>
                     <Col>
                         <img className="projects" src={ProjetMeteo} alt="ProjetMeteo" />
@@ -46,8 +48,9 @@ export default function ProjectsPage() {
                             <h4 className="projects">March 2022 :</h4>
                             <br />
                             In this project I did with SheCodes I learned how to use a dictionary and images API.
-                            <a target="blank" href="https://euphonious-flan-0c4888.netlify.app/"><button className="projects button" type="button">Dico project</button></a>
                         </article>
+                        <a target="blank" href="https://euphonious-flan-0c4888.netlify.app/"><button className="projects button" type="button">Dico project</button></a>
+
                     </Col>
                 </Row>
             </Container>

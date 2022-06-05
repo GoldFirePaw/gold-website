@@ -1,4 +1,7 @@
 main.menuBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(228, 203, 251);
     border: 1px solid rgb(228, 203, 251);
     border-radius: 10px;

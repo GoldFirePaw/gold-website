@@ -26,6 +26,8 @@ img.projects {
 }
 
 a {
+    position: relative;
+    top: -300px;
     text-decoration: none;
 }
 
@@ -38,4 +40,43 @@ article.projects {
     background-color: rgba(233, 212, 254, 0.431);
     padding: 15px;
     box-shadow: 7px 5px 11px 2px rgba(170, 145, 184, 0.64);
+}
+
+@media all and (max-width: 768px) {
+    a {
+        top: -190px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    img.projects {
+        height: 150px;
+        margin: 10px 0;
+    }
+    article.projects {
+        display: none;
+    }
+    button.projects {
+        margin-top: 50px;
+    }
+    a {
+        position: sticky;
+    }
+}
+
+@media all and (max-width: 320px) {
+    main.projects {
+        display: flex;
+    }
+    img.projects {
+        height: 50px;
+        margin-top: 45px;
+    }
+    article.projects {
+        display: none;
+    }
+    button.projects {
+        text-align: center;
+        margin: 10 auto;
+    }
 }
