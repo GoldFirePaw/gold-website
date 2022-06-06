@@ -104,7 +104,7 @@ export default function MenuBar(props) {
   return (
     <main className="menuBar menu-basics-example">
       <button className="burgerbtn" type="button" onClick={handleBurgerClick}>
-        <i class="fa-solid fa-burger"></i>
+        <i className="burgerIcon fa-solid fa-bars"></i>
       </button>
       {((isMobile && displayMenu) || !isMobile) && <ul>
         <li><button type="button" onClick={handleClickHome} className="menuItem">🏠 Home</button></li>

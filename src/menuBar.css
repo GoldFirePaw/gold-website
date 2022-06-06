@@ -41,6 +41,15 @@ ul li {
     margin-top: 5px;
 }
 
+.burgerIcon {
+    font-size: 40px;
+    color: rgb(180, 140, 218);
+}
+
+.burgerIcon:hover {
+    color: rgb(103, 76, 128);
+}
+
 @media all and (max-width: 768px) {
     .menuBar {
         flex-direction: column;
