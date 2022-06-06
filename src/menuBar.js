@@ -1,14 +1,16 @@
-import "foundation-sites/dist/css/foundation.min.css";
-import { Menu, MenuItem } from "react-foundation";
 import "./menuBar.css";
+import { useState, useEffect } from "react";
 
 export default function MenuBar(props) {
+
+  let [displayMenu, setDisplayMenu] = useState(false);
+  let [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
   let projectsPage = props.projectsPage
   let contactButton = props.contactButton
   let aboutPage = props.aboutPage
   let drawingsPage = props.drawingsPage
   let streamPage = props.streamPage
-
 
   function handleClickHome() {
     props.setContactButton(false)
@@ -83,27 +85,34 @@ export default function MenuBar(props) {
     }
   }
 
+  function handleBurgerClick() {
+    setDisplayMenu(!displayMenu)
+
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    window.addEventListener("resize", handleResize)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, []);
+
   return (
     <main className="menuBar menu-basics-example">
-      <Menu>
-        <MenuItem>
-          <button type="button" onClick={handleClickHome} className="menuItem">🏠 Home</button>
-        </MenuItem>
-        <MenuItem>
-          <button type="button" onClick={handleClickAbout} className="menuItem">📄 About</button>
-        </MenuItem>
-        <MenuItem>
-          <button type="button" onClick={handleClickDrawings} className="menuItem">🎨 Instagram feed</button>
-        </MenuItem>
-        <MenuItem>
-          <button type="button" onClick={handleClickProjects} className="menuItem">💻 Projects</button>
-        </MenuItem>
-        <MenuItem>
-          <button type="button" onClick={handleClickStreams} className="menuItem">🎮 Stream</button>
-        </MenuItem>
-        <MenuItem>
-          <button type="button" onClick={handleClickContact} className="menuItem">📮 Contact</button>
-        </MenuItem>
-      </Menu>
+      <button className="burgerbtn" type="button" onClick={handleBurgerClick}>
+        <i class="fa-solid fa-burger"></i>
+      </button>
+      {((isMobile && displayMenu) || !isMobile) && <ul>
+        <li><button type="button" onClick={handleClickHome} className="menuItem">🏠 Home</button></li>
+        <li><button type="button" onClick={handleClickAbout} className="menuItem">📄 About</button></li>
+        <li><button type="button" onClick={handleClickDrawings} className="menuItem">🎨 Instagram feed</button></li>
+        <li><button type="button" onClick={handleClickProjects} className="menuItem">💻 Projects</button></li>
+        <li><button type="button" onClick={handleClickStreams} className="menuItem">🎮 Stream</button></li>
+        <li><button type="button" onClick={handleClickContact} className="menuItem">📮 Contact</button></li>
+      </ul>}
     </main>);
 }

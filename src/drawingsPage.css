@@ -35,7 +35,7 @@ li.drawings {
 
 img.drawings {
     width: auto;
-    max-width: 200px;
+    max-width: 250px;
     margin: 10px;
     box-shadow: 7px 5px 11px 2px rgba(170, 145, 184, 0.64);
 }

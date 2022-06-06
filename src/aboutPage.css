@@ -87,6 +87,9 @@ img.about {
         font-size: 18px;
         width: 50%;
     }
+    main.about {
+        width: 85%;
+    }
 }
 
 @media all and (max-width: 680px) {

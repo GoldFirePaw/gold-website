@@ -1,10 +1,20 @@
 main.menuBar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background-color: rgb(228, 203, 251);
     border: 1px solid rgb(228, 203, 251);
     border-radius: 10px;
+}
+
+.menuBar>ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
 }
 
 .menuItem {
@@ -24,6 +34,21 @@ main.menuBar {
     border-radius: 30px;
 }
 
-.menuBar {
-    padding: 10px;
+.burgerbtn {
+    display: none;
+    width: fit-content;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+@media all and (max-width: 768px) {
+    .menuBar {
+        flex-direction: column;
+    }
+    .menuBar>ul {
+        flex-direction: column;
+    }
+    .burgerbtn {
+        display: block;
+    }
 }
