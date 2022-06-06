@@ -1,4 +1,6 @@
 button.projects {
+    position: relative;
+    top: -150px;
     display: flex;
     margin: 30px auto;
     margin-bottom: 10px;
@@ -22,9 +24,9 @@ img.projects {
 }
 
 a.projects {
+    text-decoration: none;
     position: relative;
     top: -300px;
-    text-decoration: none;
 }
 
 article.projects {
@@ -38,16 +40,23 @@ article.projects {
     box-shadow: 7px 5px 11px 2px rgba(170, 145, 184, 0.64);
 }
 
-@media all and (max-width: 768px) {
-    a {
-        top: -190px;
+@media all and (max-width: 1024px) {
+    a.projects {
+        top: -150px;
     }
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 768px) {
+    a.projects {
+        top: 0px;
+    }
+}
+
+@media all and (max-width: 425px) {
     img.projects {
         height: 150px;
         margin: 10px 0;
+        border-radius: 150px;
     }
     article.projects {
         display: none;
@@ -55,8 +64,17 @@ article.projects {
     button.projects {
         margin-top: 50px;
     }
-    a {
-        position: sticky;
+    a.projects {
+        position: relative;
+        top: 150px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    img.projects {
+        height: 130px;
+        border-radius: 100px;
+        margin: 10px 8px;
     }
 }
 

@@ -21,7 +21,7 @@ export default function ProjectsPage() {
                             <br />
                             In this project I tried many ways to use grids. Next I'll add a switch to change the theme.
                         </article>
-                        <a target="blank" href="https://incandescent-phoenix-b705b8.netlify.app/"> <button className="projects button" type="button">Calc project</button> </a>
+                        <a className="projects" target="blank" href="https://incandescent-phoenix-b705b8.netlify.app/"> <button className="projects button" type="button">Calc project</button> </a>
 
                     </Col>
                 </Row>
@@ -32,7 +32,7 @@ export default function ProjectsPage() {
                             <br />
                             In this project I did with SheCodes I learned how to use a weather API.
                         </article>
-                        <a target="blank" href="https://dainty-dasik-625b16.netlify.app/"><button className="projects button" type="button">Weather project</button></a>
+                        <a className="projects" target="blank" href="https://dainty-dasik-625b16.netlify.app/"><button className="projects button" type="button">Weather project</button></a>
 
                     </Col>
                     <Col>
@@ -49,7 +49,7 @@ export default function ProjectsPage() {
                             <br />
                             In this project I did with SheCodes I learned how to use a dictionary and images API.
                         </article>
-                        <a target="blank" href="https://euphonious-flan-0c4888.netlify.app/"><button className="projects button" type="button">Dico project</button></a>
+                        <a className="projects" target="blank" href="https://euphonious-flan-0c4888.netlify.app/"><button className="projects button" type="button">Dico project</button></a>
 
                     </Col>
                 </Row>
